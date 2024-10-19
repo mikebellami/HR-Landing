@@ -139,7 +139,7 @@ button:disabled {
 /* } */
 
 .dot {
-  background-image: url("./assets/images/school-pattern.svg");
+  background-image: url("./assets/images/pattern.svg");
   background-position: top right;
   background-repeat: no-repeat;
   height: calc(800px - 100px);

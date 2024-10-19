@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { RiCloseLine, RiMenu4Line } from "react-icons/ri";
-import { Link } from "react-router-dom";
+import { ScrollContext } from "src/App";
 
 const TopNav = () => {
+
+	const { homeRef, aboutRef, servicesRef, testimonysRef, scrollToSection } = useContext(ScrollContext);
+
 	const [isSticky, setIsSticky] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 850);
@@ -50,21 +53,24 @@ const TopNav = () => {
 							<>
 								<div className="web-nav">
 									<ul className="nav-link cursor-pointer">
-										<li className="font-medium text-secondary text-[1.6rem] leading-5">
-											<Link to="/">Home</Link>
+										<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(homeRef)}>
+											Home
+										</li>
+
+										<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(aboutRef)}>
+											About Us
+										</li>
+
+										<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(servicesRef)}>
+											Services
+										</li>
+
+										<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(testimonysRef)}>
+											Testimonials
 										</li>
 
 										<li className="font-medium text-secondary text-[1.6rem] leading-5">
-											<Link to="#">About Us</Link>
-										</li>
-
-										<li className="font-medium text-secondary text-[1.6rem] leading-5">
-											<Link to="#services" smooth >Services</Link>
-										</li>
-
-
-										<li className="font-medium text-secondary text-[1.6rem] leading-5">
-											<Link to="#">Contact Us</Link>
+											Contact Us
 										</li>
 
 
@@ -84,21 +90,23 @@ const TopNav = () => {
 					{isMobileMenuOpen && (
 						<>
 							<ul className="cursor-pointer mobile">
-								<li className="font-medium text-secondary text-[1.6rem] leading-5">
-									<Link to="/">Home</Link>
+								<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(homeRef)}>
+									Home
 								</li>
-								<li className="font-medium text-secondary text-[1.6rem] leading-5">
-									<Link to="#">About Us</Link>
-								</li>
-
-								<li className="font-medium text-secondary text-[1.6rem] leading-5">
-									<Link to="#">Services</Link>
+								<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(homeRef)}>
+									About Us
 								</li>
 
+								<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(homeRef)}>
+									Services
+								</li>
 
+								<li className="font-medium text-secondary text-[1.6rem] leading-5" onClick={() => scrollToSection(testimonysRef)}>
+									Testimontials
+								</li>
 
 								<li className="font-medium text-secondary text-[1.6rem] leading-5">
-									<Link to="/contact">Contact Us</Link>
+									Contact Us
 								</li>
 
 

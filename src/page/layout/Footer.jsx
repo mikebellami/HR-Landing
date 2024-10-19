@@ -25,7 +25,7 @@ const Footer = () => {
 							© Copyright {new Date().getFullYear()} Human Resource All Rights Reserved
 						</p>
 					</div>
-					<div className="text-primary cursor-pointer text-[2.5rem] font-normal  leading-[2.2rem] flex justify-center gap-[1rem]">
+					<div className="text-primary cursor-pointer text-[2.5rem] font-normal  leading-[2.2rem] flex md:justify-center gap-[1rem]">
 						<FaLinkedin />
 						<FaSquareTwitter />
 						<FaFacebookSquare />

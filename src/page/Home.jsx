@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ScrollContext } from "../App";
 import { aboutUs, services, testimonials } from "../assets/constant";
 import { ImQuotesLeft } from "react-icons/im";
-import BannerTwo from "src/assets/images/banner.svg";
+import Banner from "src/assets/images/banner.jpg";
 
 const Home = () => {
+	const { homeRef, aboutRef, servicesRef, testimonysRef } = useContext(ScrollContext);
+
 	return (
 		<>
 			{/* Hero section */}
-			<HeroSection />
+			<section ref={homeRef} >
+				<HeroSection />
+			</section>
 
-			<About />
+			<section ref={aboutRef} >
+				<About />
+			</section>
+
 
 			{/* Sevices */}
-			<Services />
+			<section ref={servicesRef} >
+				<Services />
+			</section>
 
-
-			{/* Steps */}
-			<Testimony />
+			{/* Testimony */}
+			<section ref={testimonysRef} >
+				<Testimony />
+			</section>
 
 		</>
 	);
@@ -44,7 +55,7 @@ export const HeroSection = () => {
 					</div>
 				</div>
 
-				<img src={BannerTwo} alt="banner" className="max-w-[670px] max-md:w-full" />
+				<img src={Banner} alt="banner" className="max-w-[670px] max-md:w-full" />
 			</div>
 		</div>
 	);
