@@ -1,98 +1,79 @@
-import { CardIcon, ClockIcon, DocumentIcon, EditIcon, MonitorIcon, SecurityIcon, UnlimitedIcon, VideoIcon } from "./svg";
 
-export const features = [
+import { FaBalanceScale, FaBookOpen, FaChartBar, FaHandshake, FaMoneyBillWave, FaUserTie } from "react-icons/fa";
+
+
+export const aboutUs = [
 	{
-		icon: <MonitorIcon />,
-		title: "Digital Learning",
-		content:
-			"Our platform enables a seamless transition from traditional learning to an immersive online experience, accessible anytime, anywhere.",
+
+		title: "Our Mission",
+		content: "Our mission is to create impactful HR solutions that enhance the growth and success of our clients. We strive to deliver comprehensive and tailored services that meet the evolving needs of businesses, fostering a productive, engaged, and empowered workforce.",
 	},
 	{
-		icon: <VideoIcon />,
-		title: "Live Classes",
-		content: "Interact with both educators and learners in real time through live classes. Whether as a student, a professional, or a business.",
+
+		title: "Our Vision",
+		content: "Our vision is to be the most trusted partner for businesses in building and nurturing top-tier talent. We aim to redefine the future of human resources by providing cutting-edge solutions that empower organizations and their employees to achieve their highest potential."
 	},
-	{
-		icon: <DocumentIcon />,
-		title: "Seamless Content Creation",
-		content: "ClassCube empowers educators to effortlessly create dynamic lessons with videos, docs, live streams, texts, and more.",
-	},
-	{
-		icon: <CardIcon />,
-		title: "Easy & Simplified Payment",
-		content: "Our straightforward and transparent payment system ensures a hassle-free experience for learners and creators alike.",
-	},
+
 ];
 
-export const ClassCubeSchoolFaqs = [
+
+
+export const services = [
 	{
-		title: "Does ClassCube provide live video sessions?",
-		content:
-			"Yes, ClassCube provides live video sessions for virtual meetings between teachers and students, allowing for a high-quality live learning experience.",
+		title: "Talent Acquisition",
+		content: "Our dedicated team specializes in sourcing and matching the best candidates to meet your unique hiring needs. We leverage industry insights and advanced recruitment strategies to ensure you find the right fit for your organization.",
+		icon: <FaUserTie className="text-4xl  text-primary" />
 	},
 	{
-		title: "Does ClassCube support interactive content for studying complex topics?",
-		content: "Yes, ClassCube includes essential tools to display complex mathematical or chemical equations in lesson notes.",
+		title: "HR Consulting",
+		content: "We offer strategic HR advice and tailored solutions designed to enhance your organization’s performance. Our experts work closely with you to understand your challenges and implement effective strategies that align with your goals.",
+		icon: <FaChartBar className="text-4xl text-primary " />
 	},
 	{
-		title: "Can uploaded content be proofread by the Head of School before publishing for parents to see?",
-		content: "Yes, the Head of School and other stakeholders can proofread content before publication.",
+		title: "Training & Development",
+		content: "Our custom training programs are designed to upskill your team, improve productivity, and drive results. We focus on developing essential skills that empower your employees and contribute to your organization's success.",
+		icon: <FaBookOpen className="text-4xl text-primary " />
 	},
 	{
-		title: "What makes ClassCube a secure platform for schools to use?",
-		content: "ClassCube provides a high-profile security perimeter around every school's data, making it a secure platform for schools to use.",
+		title: "Employee Engagement",
+		content: "We believe that a positive workplace culture is key to boosting morale and productivity. Our solutions foster engagement through feedback systems, recognition programs, and team-building activities that create a vibrant work environment.",
+		icon: <FaHandshake className="text-4xl text-primary " />
 	},
 	{
-		title: "Are there any limits to the number of lessons that can be created using ClassCube? ",
-		content: "No, there are no limits to the number of lessons that can be created using ClassCube.",
+		title: "Payroll & Benefits",
+		content: "Simplify your operations with our comprehensive payroll services and benefits management. We handle everything from payroll processing to compliance, ensuring your employees are compensated accurately and on time.",
+		icon: <FaMoneyBillWave className="text-4xl text-primary " />
 	},
 	{
-		title: "How does ClassCube differ from other online learning management systems?",
-		content:
-			"ClassCube offers a fully customizable interface, engaging learning journey, and advanced features like live video sessions and interactive content for complex topics.",
-	},
-	{
-		title: "Is there any training or support provided to schools for using ClassCube? ",
-		content:
-			"Yes, there is training and support provided to schools for using ClassCube, including tutorials and resources to help teachers and administrators get started with the platform.",
-	},
-	{
-		title: "Does ClassCube require internet?",
-		content: "Yes, ClassCube requires internet access to use its various features and tools.",
-	},
-	{
-		title: "What is the size limit for video file upload?",
-		content: "The size limit for video file upload on ClassCube is 150 MB.",
-	},
-	{
-		title: "Is ClassCube customizable?",
-		content: "Yes, ClassCube is fully customizable to meet the specific learning needs of different schools.",
-	},
+		title: "Compliance & Risk",
+		content: "Navigating the complexities of compliance can be challenging. We ensure your organization meets all regulatory requirements, minimizing risks through thorough assessments and tailored strategies that protect your business.",
+		icon: <FaBalanceScale className="text-4xl text-primary " />
+	}
 ];
 
-export const forSchoolFeatures = [
+export const testimonials = [
 	{
-		icon: <SecurityIcon className="w-[20%] " />,
-		title: "Security",
-		content:
-			"We prioritize the protection of your school's data. We have built a robust security framework to safeguard your school’s information",
+		name: "John Doe",
+		content: "Working with this HR team has completely transformed our hiring process. Their expertise and dedication have made a significant impact on our organization’s growth."
 	},
 	{
-		icon: <ClockIcon className="w-[20%] " />,
-		title: "Good User Interface",
-		content:
-			"Enjoy a user-friendly interface that offers a fully customizable feature, and engaging learning journey that helps increase learning retention and productivity.",
+		name: "Sarah Johnson",
+		content: "The support we received in managing our employee relations has been outstanding. They truly care about the success of our business and our people."
 	},
 	{
-		icon: <UnlimitedIcon className="w-[20%] " />,
-		title: "Unlimited Lesson Creation",
-		content:
-			" ClassCube's intuitive interface allows you to craft resources for lessons and assessments using various media including text, audio, video, images, and more.",
+		name: "Michael Smith",
+		content: "Their HR services helped streamline our operations, allowing us to focus on growing our business. We couldn't be more pleased with the results!"
 	},
 	{
-		icon: <EditIcon className="w-[20%] " />,
-		title: "Customisable Platform",
-		content:
-			"Tailor ClassCube to your school's unique learning needs. Our platform is fully customizable, adapting to your specific requirements.",
+		name: "Emily Davis",
+		content: "The professionalism and attention to detail provided by this team are unmatched. They have become an integral part of our business strategy."
 	},
+	{
+		name: "Robert Brown",
+		content: "From recruitment to employee development, their HR services have made a huge difference. We are thankful for their continuous support."
+	},
+	{
+		name: "Linda Williams",
+		content: "They are knowledgeable, responsive, and always go above and beyond to ensure our HR needs are met. I highly recommend their services."
+	}
 ];

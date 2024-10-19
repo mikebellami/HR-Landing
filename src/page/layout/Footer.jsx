@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "src/assets/images/logo.png";
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareTwitter } from "react-icons/fa6";
 
 const Footer = () => {
 	return (
@@ -8,25 +8,28 @@ const Footer = () => {
 			<div className="max-w-[1400px] mx-auto px-10">
 				<div className="flex flex-col md:flex-row gap-10 md:justify-between md:items-center">
 					<div className="text-secondary text-[3.2rem] font-semibold md:max-w-[60%] lg:max-w-[50%]">
-						Join Other Schools & Businesses Using ClassCube Today!
+						Join Leading Organizations Embracing Innovative HR Solutions Today!
 					</div>
 
 					<button
 						className="max-w-[60%] md:max-w-[60%] md:w-auto py-[10px] px-[30px] rounded-[5px] bg-primary text-white"
-						onClick={() => window.open("https://signup.schoolrevs.com/register?merchant=classcube", "_blank")}
 					>
-						Get Started
+						Discover More
 					</button>
 				</div>
 				<div className="flex flex-col md:flex-row gap-[20px] md:justify-between md:items-center my-[50px]">
-					<div className="flex justify-between md:w-[50%]">
-						<img src={logo} alt="ClassCube logo" className="w-[15rem] object-contain" />
+					<div className="md:w-[50%]">
+						<p className="text-primary text-[2.5rem] font-bold">Human <span className="text-secondary">Resource</span></p>
+
+						<p className="text-gray text-[1.5rem] font-normal  leading-[2.2rem]">
+							© Copyright {new Date().getFullYear()} Human Resource All Rights Reserved
+						</p>
 					</div>
-					<div className="text-gray text-[1.5rem] font-normal  leading-[2.2rem]">
-						© Copyright {new Date().getFullYear()} Revocube. All Rights Reserved{" "}
-						<Link to="https://ClassCube.online/privacy" className="text-primary cursor-pointer">
-							Privacy and Policy
-						</Link>
+					<div className="text-primary cursor-pointer text-[2.5rem] font-normal  leading-[2.2rem] flex justify-center gap-[1rem]">
+						<FaLinkedin />
+						<FaSquareTwitter />
+						<FaFacebookSquare />
+						<FaInstagramSquare />
 					</div>
 				</div>
 			</div>

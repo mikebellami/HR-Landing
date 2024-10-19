@@ -1,6 +1,6 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import { Home, Footer, TopNav, Contact } from "./page";
+import { Home, Footer, TopNav } from "./page";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -13,10 +13,7 @@ function App() {
 					path: "",
 					element: <Home />,
 				},
-				{
-					path: "/contact",
-					element: <Contact />,
-				},
+
 			],
 		},
 	]);
@@ -24,7 +21,7 @@ function App() {
 		<>
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>ClassCube | Smart, Effective, and Digital Learning</title>
+				<title>Human Resource </title>
 			</Helmet>
 			<RouterProvider router={router} />
 		</>
